@@ -41,6 +41,7 @@ import org.jboss.resteasy.spi.HttpRequest;
 import org.jboss.resteasy.util.Encode;
 
 import play.data.parsing.DataParser;
+import play.data.parsing.DataParsers;
 import play.data.parsing.UrlEncodedParser;
 import play.mvc.Http.Request;
 
@@ -78,9 +79,9 @@ public class RESTEasyRequestWrapper implements HttpRequest {
 		Map<String, String[]> params;
 		// read it from the body if possible
 		if (getHttpHeaders().getMediaType().isCompatible(MediaType.valueOf("application/x-www-form-urlencoded")))
-			params = DataParser.parsers.get("application/x-www-form-urlencoded").parse(request.body);
+			params = DataParsers.forContentType("application/x-www-form-urlencoded").parse(request.body);
 		else if (getHttpHeaders().getMediaType().isCompatible(MediaType.valueOf("multipart/form-data")))
-			params = DataParser.parsers.get("multipart/form-data").parse(request.body);
+			params = DataParsers.forContentType("multipart/form-data").parse(request.body);
 		else{
 			params = new HashMap<String, String[]>();
 		}

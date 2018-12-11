@@ -1,0 +1,4 @@
+self: play -> resteasy-1.4.4 0.1
+
+require:
+    - play

@@ -26,7 +26,7 @@ public class RESTEasyController extends Controller {
     // Makes sure the right JAXB parser is loaded, since modules which might reference different parsers (in their 
     // META-INF section) are loaded in a random order by Play! (i.e. Play! classpath order is always undefined) 
     System.setProperty("javax.xml.parsers.SAXParserFactory", "org.apache.xerces.jaxp.SAXParserFactoryImpl");
-    
+    System.setProperty("org.apache.cxf.jaxrs.provider.json.JSONProvider.dropRootElement", "true");
     dispatcher.invoke(restReq, restRep);
   }
 }
