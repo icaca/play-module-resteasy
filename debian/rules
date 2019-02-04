@@ -7,9 +7,9 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
-VERSION=1.4
+VERSION=1.5.2
 MODULE_NAME=resteasy
-PLAY_VERSION=1.2
+PLAY_VERSION=1.5.2
 APP=play-$(PLAY_VERSION)-$(MODULE_NAME)-module-$(VERSION)
 MODULE=$(MODULE_NAME)-$(VERSION)
 

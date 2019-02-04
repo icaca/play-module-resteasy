@@ -12,3 +12,5 @@ debian/files
 debian/play-1.1-resteasy-module-*
 eclipse
 lib/play-resteasy-play-module.jar
+.classpath
+.project
