@@ -77,7 +77,6 @@ public class ServletUtil
 		}
 
 		String path = PathHelper.getEncodedPathInfo(absolutePath.getRawPath(), contextPath);
-		
 		List<PathSegment> pathSegments = PathSegmentImpl.parseSegments(path,true);
 
 		URI baseURI = absolutePath;
