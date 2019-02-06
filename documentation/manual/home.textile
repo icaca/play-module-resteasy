@@ -1,35 +1,31 @@
-h1. About
+h1. {module name}
 
-The RESTEasy Play! module allows you to define JAX-RS RESTful web services in the Play! Framework using RESTEasy.
-Usage
+p(note). Write your module documentation in this file, possibly linking to other Textile files, and delete these notes when you are finished.
 
-Download and install the RESTEasy Play! module and add the following to your conf/application.conf:
+p(note). Start with a clear statement of what the module is and what it is for. Link to any third-party libraries that the module is based on.
 
-bc. module.resteasy=.../resteasy-play-module
-# This is the default path prefix for RESTEasy services
-# resteasy.path=/rest
+p(note). Briefly describe why you might want to use this module in a Play application.
 
-Then start writing JAX-RS resources which will be located at /rest/hello:
+h2. Sample application
 
-bc. @Path("/hello")
-public class Hello {
- 
- @GET
- public String get(){
-  return "Hello World\\n";
- }
- 
-}
+p(note). Your module should contain a sample app in the @sample@ directory that demonstrates the module. Describe how to run the demo here.
 
+h2. Getting started
 
-h1. Warning
+p(note). Describe any installation that is required, beyond adding and resolving the module dependency.
 
-This is beta-quality software, and not every RESTEasy feature will work. Let us know if you have anything that needs fixing.
+h2. Configuration
 
-h1. Source code
+p(note). List any configuration options that the module uses, with an @h3.@ heading for each one.
 
-Our source code repository is browsable on our "Github project page":http://github.com/Lunatech-OSS/RESTEasy-Play--module.
+h2. Usage
 
-h1. Bugs
+p(note). Explain how to use the module, and describe any routes, controllers, models or views that the module provides.
 
-Expect many, since this is pre-release quality.
+h2. Tags
+
+p(note). List any tags the module provides, with an @h3.@ heading for each one. Include the tags’ arguments.
+
+h2. Commands
+
+p(note). List any commands the module provides, with an @h3.@ heading for each one. Include the commands’ options.
