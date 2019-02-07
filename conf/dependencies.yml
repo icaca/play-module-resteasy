@@ -1,4 +1,0 @@
-self: play -> play-module-resteasy 1.5.2
-
-require:
-    - play
