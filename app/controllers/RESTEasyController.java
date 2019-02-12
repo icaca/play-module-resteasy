@@ -14,7 +14,7 @@ import play.mvc.Controller;
 
 public class RESTEasyController extends Controller {
   public static void serve() {
-    Logger.info("RESTEasy controller invoked: %s", request.url);
+    //Logger.info("RESTEasy controller invoked: %s", request.url);
     
     RESTEasyPlugin plugin = Play.plugin(RESTEasyPlugin.class);
     Dispatcher dispatcher = plugin.deployment.getDispatcher();
