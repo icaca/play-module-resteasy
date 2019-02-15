@@ -4,6 +4,6 @@ stages:
 job:
   stage: build
   script: 
-    - ~/play-1.5.2/play build-module .
+    - ~/play-1.5.2/play build-module . --framework 1.5.2 --version 1.5.2 --require ""
   tags:
     - play
