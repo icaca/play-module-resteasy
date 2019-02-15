@@ -1,0 +1,7 @@
+stages:
+  - build
+
+job:
+  stage: build
+  script: 
+    - ~/play-1.5.2/play build-module .
