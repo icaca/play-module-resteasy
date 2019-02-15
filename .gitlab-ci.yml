@@ -5,6 +5,6 @@ job:
   stage: build
   script: 
     - echo $play
-    - ~/play-1.5.2/play build-module . --framework "1.5.2" --version "1.5.2ls" --require ""
+    - ~/play-1.5.2/play build-module . --framework "" --version "1.5.2" --require ""
   tags:
     - play
