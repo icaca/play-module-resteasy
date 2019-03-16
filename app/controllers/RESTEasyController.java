@@ -27,6 +27,7 @@ public class RESTEasyController extends Controller {
     // META-INF section) are loaded in a random order by Play! (i.e. Play! classpath order is always undefined) 
     System.setProperty("javax.xml.parsers.SAXParserFactory", "org.apache.xerces.jaxp.SAXParserFactoryImpl");
     System.setProperty("org.apache.cxf.jaxrs.provider.json.JSONProvider.dropRootElement", "true");
+    System.setProperty("org.apache.cxf.jaxrs.provider.json.JSONProvider.dropCollectionWrapperElement", "true");
     dispatcher.invoke(restReq, restRep);
   }
 }
